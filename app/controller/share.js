@@ -30,8 +30,8 @@ class Share extends Controller { // 类名大写
     const findIndex = links.findIndex(i => i.value === params.value);
     console.log(30, params);
     if (findIndex === -1) {
-      const { country, value } = params;
-      await this.app.mysql.insert('LINK', { country, date: utils.getCurrentTime(), value });
+      const { country, value, description: descript } = params;
+      await this.app.mysql.insert('LINK', { country, date: utils.getCurrentTime(), value, descript });
       ctx.body = {
         code: 200,
         msg: 'Thank you for sharing!',
