@@ -6,7 +6,7 @@ class NewsController extends Controller { // 类名大写
     this.ctx.body = {
       code: 0,
       msg: 'success!',
-      data: '123',
+      data: [1,2,3,4,5],
     };
   }
 
@@ -15,7 +15,8 @@ class NewsController extends Controller { // 类名大写
       code: 0,
       msg: 'success!',
       data: 'A',
-    };
+    }
+    this.ctx.throw(500, 'error');
   }
 
   async testB() { // async await 异步

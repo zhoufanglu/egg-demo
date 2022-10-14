@@ -11,7 +11,7 @@ module.exports = appInfo => {
    * @type {Egg.EggAppConfig}
    **/
   const config = exports = {};
-  config.mysql = {
+  /*config.mysql = {
     // 单数据库信息配置
     client: {
       // host
@@ -29,7 +29,7 @@ module.exports = appInfo => {
     app: true,
     // 是否加载到 agent 上，默认关闭
     agent: false,
-  };
+  };*/
 
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1626072426665_7617';

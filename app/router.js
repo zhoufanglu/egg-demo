@@ -9,6 +9,7 @@ module.exports = app => {
   router.get('/getUserList', controller.user.list);
   router.get('/testA', controller.user.testA);
   router.get('/testB', controller.user.testB);
+  router.get('/testC', controller.user.testC);
   router.get('/getValById', controller.user.getValById);
   // share
   router.post('/judgePsw', controller.share.judgePsw);
